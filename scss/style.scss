@@ -1,0 +1,75 @@
+@keyframes fade-inout {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+@keyframes fadein {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+}
+body {
+   
+    -webkit-text-size-adjust: 100%;
+}
+.content {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100%;
+    width: 100%;
+    /*grid-gap: 10px;*/
+}
+.content > * {
+    padding: 20px;
+    
+}
+.topbar {
+    grid-column: 2/13;
+    background: snow;
+}
+.navbar {
+    
+    
+    background-color: aqua;
+}
+.header-menu {
+    grid-column: 1/1;
+    grid-row: 1/13;
+    background: snow;
+   
+   
+    .linkb {
+        background-color: rgb(57, 74, 100);
+        border-radius: 30px;
+
+
+    }
+    
+}
+.main {
+    display: grid;
+    grid-column: 2/13;
+    grid-row: 2/6;
+    background-color: rgb(255, 238, 219);
+ 
+    
+    
+}
+.section {
+    grid-column: 2/11;
+    grid-row: 6/12;
+    background-color: rgb(255, 198, 129);
+    
+}
+.section2 {
+    grid-column: 11/13;
+    grid-row: 6/12;
+    background-color: rgb(255, 198, 129);
+    
+}
+.footer {
+    grid-column: 2/13;
+    grid-row: 12/13;
+    background-color: rgb(255, 198, 129);
+}
