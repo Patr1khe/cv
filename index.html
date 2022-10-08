@@ -11,36 +11,38 @@
 </head>
 <body>
     <div class="content">
-        <header class="topbar"><h1 class="top-h1">WELCOME TO MY PAGE</h1>
+                <header class="topbar"><h1 class="top-h1"><span class="color-h1">WELCOME</span> TO MY PAGE</h1>
               
                  </header>
-                <div class="header-side">
+                <div class="headerside">
                <div class="logo">
                     <a href="#" class="logo-link"><img src="logo1.png" class="logo-link-img" alt=""></a>
                 </div><div class="list-icons">
-                    <a href="https://github.com/Patr1khe"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/patrik-he-649520239/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                    <a href="mailto:patrikswgit@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Patr1khe" class="icon-pos"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/patrik-he-649520239/" class="icon-pos2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://gmail.com" class="icon-pos3"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="mailto:patrikswgit@gmail.com" class="icon-pos4"><i class="fa fa-reply" aria-hidden="true"></i></a>
                     </div>
                     <button onclick="myFunction()" class="linkb">MENU</button>
                 <div class="header-menu">
-                 <div class="dropdownmenu" id="dropDownmenu">
+                    <div class="dropdownmenu" id="dropDownmenu">
                     <ul class="list-pos">
-                        <li class="list-item"><a href="index.html" class="item-h"></a>⇲HOME⇱</li>
-                        <li class="list-item"><a href="about.html" class="item-h"></a>⇲ABOUT⇱</li>
-                        <li class="list-item"><a href="hobby.html" class="item-h"></a>⇲HOBBY⇱</li>
-                        <li class="list-item"><a href="karta.html" class="item-h"></a>⇲MAP⇱</li>
+                        <li class="list-item"><a href="index.html" class="item-h">⇲HOME⇱</a></li>
+                        <li class="list-item"><a href="about.html" class="item-h">⇲ABOUT⇱</a></li>
+                        <li class="list-item"><a href="hobby.html" class="item-h">⇲HOBBY⇱</a></li>
+                        <li class="list-item"><a href="karta.html" class="item-h">⇲MAP⇱</a></li>
                     </ul>
                     
                 
 
                 
-            </div>
-        </div>            
+                </div>
+                </div>            
                 </div>
        
-        <div class="main">
-            1
+        <div class="main"><div class="frame-img"><img src="profileimg.jpg" alt="Pic of me" class="p-img"></div>
+            <span class="m-name">PATRIK</span>
+            <h2>I'm a student</h2>
         </div>
         <div class="section">1</div>
         <div class="section2">1</div>
@@ -49,5 +51,37 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function myFunction() {
+  document.getElementById("dropDownmenu").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.linkb')) {
+    var dropdowns = document.getElementsByClassName("dropdownmenu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        const linkb = document.querySelector(".linkb");
+        const dropdownmenu = document.querySelector(".headerside");
+
+        linkb.addEventListener("click", () =>{
+            linkb.classList.toggle("active");
+            headerside.classList.toggle("show");
+        })
+
+        document.querySelectorAll(".item-list").forEach(n => n.addEventListener("click", () => {
+            linkb.classList.remove("active");
+            headerside.classList.remove("active");
+        }))
+
+    </script>
 </body>
 </html>
