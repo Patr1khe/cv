@@ -12,9 +12,10 @@
 <body>
     <div class="content">
                 <header class="topbar"><h1 class="top-h1"><span class="color-h1">WELCOME</span> TO MY PAGE</h1>
-              
+                    <div class="boxbtn"> <button onclick="myFunction()" class="linkb">MENU</button></div>
+                    <!-- <button class="btn-toggle" onclick="myFunction()">Switch-Mode</button> -->
                  </header>
-                <div class="headerside">
+                <div id="headerSide" class="headerside">
                <div class="logo">
                     <a href="#" class="logo-link"><img src="logo1.png" class="logo-link-img" alt=""></a>
                 </div><div class="list-icons">
@@ -27,10 +28,10 @@
                 <div class="header-menu">
                     <div class="dropdownmenu" id="dropDownmenu">
                     <ul class="list-pos">
-                        <li class="list-item"><a href="index.html" class="item-h">⇲HOME⇱</a></li>
-                        <li class="list-item"><a href="about.html" class="item-h">⇲ABOUT⇱</a></li>
-                        <li class="list-item"><a href="hobby.html" class="item-h">⇲HOBBY⇱</a></li>
-                        <li class="list-item"><a href="karta.html" class="item-h">⇲MAP⇱</a></li>
+                        <li class="list-item"><a href="index.html" class="item-h">HOME</a></li>
+                        <li class="list-item"><a href="about.html" class="item-h">ABOUT</a></li>
+                        <li class="list-item"><a href="hobby.html" class="item-h">HOBBY</a></li>
+                        <li class="list-item"><a href="karta.html" class="item-h">MAP</a></li>
                     </ul>
                     
                 
@@ -40,48 +41,76 @@
                 </div>            
                 </div>
        
-        <div class="main"><div class="frame-img"><img src="profileimg.jpg" alt="Pic of me" class="p-img"></div>
-            <span class="m-name">PATRIK</span>
-            <h2>I'm a student</h2>
+        <div class="main">
+            <div class="switch">
+            <input id="switcher" class="switcher" type="checkbox" onchange="changeit()">
+            <label for="switcher"></label>
+            </div>
+            <div class="frame-img"><img src="profileimg.jpg" alt="Pic of me" class="p-img"></div>
+            <h2 aria-label="My name's Patrik, I'm fulltime student in Front End Developer at Malmö" class="mlabel-h2">
+                My name's <span class="m-name">Patrik</span> <br> I'm full time student in <span class="m-course">Front End Developer</span> at Malmö
+            </h2>
+            
+            <!-- <input type="checkbox" id="darkmode-toggle"/>
+                    <label for="darkmode-toggle"></label> -->
         </div>
-        <div class="section">1</div>
-        <div class="section2">1</div>
+        <div class="section"><h2 aria-label="Me&Myself">Me&Myself</h2>
+            <p class="text-s1">Today is my 5th week in school and this website is my second assigment.</p>
+            <h3>What have i been through so far?</h3>
+            <ol>
+                <li class="">HTML</li>
+                <li class="">CSS</li>
+                <li class="">LAYOUT</li>
+                <li>RESPONSIVE</li>
+                <li>Label</li>
+                <li>input</li>
+                <li>flex</li>
+                <li>grid</li>
+            </ol>
+        </div>
+        <div class="section2"> 1</div>
         <div class="footer">1</div>
         
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script>
         function myFunction() {
-  document.getElementById("dropDownmenu").classList.toggle("show");
+  document.getElementById("headerSide").classList.toggle("show");
 }
 
-
-window.onclick = function(event) {
-  if (!event.target.matches('.linkb')) {
-    var dropdowns = document.getElementsByClassName("dropdownmenu");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-        const linkb = document.querySelector(".linkb");
-        const dropdownmenu = document.querySelector(".headerside");
+   const linkb = document.querySelector(".linkb");
+        const headerside = document.querySelector("headerside");
 
         linkb.addEventListener("click", () =>{
             linkb.classList.toggle("active");
             headerside.classList.toggle("show");
         })
 
-        document.querySelectorAll(".item-list").forEach(n => n.addEventListener("click", () => {
-            linkb.classList.remove("active");
-            headerside.classList.remove("active");
-        }))
+        // document.querySelectorAll(".item-list").forEach(n => n.addEventListener("click", () => {
+        //     linkb.classList.remove("active");
+        //     headerside.classList.remove("active");
+        // }))
 
     </script>
+    
+    <script>
+        function changeit() {
+
+            var target = document.getElementsByClassName("content")[0];
+            var aaa = target.style.backgroundColor;
+            
+                
+            if (aaa == "white") {
+            target.style.backgroundColor = "#37415b4e";  
+            } else {
+            target.style.backgroundColor = "white"; 
+            }
+                
+         }
+    </script>
+    
+     
 </body>
 </html>
