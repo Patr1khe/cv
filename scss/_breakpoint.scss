@@ -1,0 +1,30 @@
+$breakpoints: (
+    "L-desktop": 1900px,
+    "desktop": 1400px,
+    "tablet": 960px,
+    "phone": 360px
+)!default;
+    
+@mixin L-desktop {
+    @media (min-width: map-get($breakpoints, "L-desktop")) {
+        @content;        
+    }
+}
+@mixin desktop {
+    @media (min-width: map-get($breakpoints, "desktop")) {
+        @content;        
+    }
+}
+@mixin tablet {
+    @media (max-width: map-get($breakpoints, "tablet")) {
+        @content;        
+    }
+}
+@mixin phone {
+    @media (max-width: map-get($breakpoints, "phone")) {
+        @content;        
+    }
+}
+
+
+
