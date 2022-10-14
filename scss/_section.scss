@@ -1,0 +1,43 @@
+.section {
+    grid-column: 2/-1;
+    grid-row: 5/11;
+    background: -webkit-linear-gradient(90deg, $box-bkg2 0%, $box-bkg3 50%, $box-bkg4 100%);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80%;
+    grid-template-rows: 50% 40%;
+    .h2-s1 {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: self-start;
+        justify-self: center;
+    }
+    .text-s1 {
+        grid-column:1;
+        grid-row:1;
+        align-self: center;
+        margin-top: 15%;
+        justify-self: center;
+     
+        
+    }
+    .h3-s1 {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: start;
+        justify-self: center;
+        
+    }
+    .ol-s1 {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding: 6%;
+        
+    }
+    
+    
+    
+}
