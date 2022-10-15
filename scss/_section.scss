@@ -1,6 +1,6 @@
 .section {
     grid-column: 2/-1;
-    grid-row: 5/11;
+    grid-row: 8/14;
     background: -webkit-linear-gradient(90deg, $box-bkg2 0%, $box-bkg3 50%, $box-bkg4 100%);
     display: grid;
     justify-content: center;
@@ -31,6 +31,7 @@
     .ol-s1 {
         grid-column: 1;
         grid-row: 2;
+        justify-items: center;
         align-self: center;
         display: grid;
         grid-template-columns: repeat(2, 50%);

@@ -12,6 +12,7 @@
 @import 'main';
 @import 'section';
 @import 'section2';
+@import 'section3';
 
 
 
@@ -25,7 +26,7 @@ body {
     background-image: url(../image/mountain1.svg);
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
-    background-position: center;
+    background-position: 10%;
     
 }
 
@@ -43,7 +44,7 @@ body * {
     height: 100%;
     width: 100%;
     font-family: $font-stack;
-    // background: $box-bkg;
+    background: $box-bkg;
     
 }
 .content > .topbar,
@@ -59,109 +60,49 @@ body * {
     
 }*/
 
-.navbar {
-    
-    
-    background-color: aqua;
-}
-.section3 {
-    grid-column: 2/-1;
-    grid-row: 19/23;
-    background: -webkit-linear-gradient(24deg, $box-bkg5 50%, $box-bkg6 100%);
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 100% 0%;
-    justify-content: center;
-    .pos-h2 {
-        grid-column: 2;
-        grid-row: 1;
-        justify-self: center;
-        .langu-h2 {
-        font-size: 2rem;
-        
-    }
-    }
-    
-    .mergebox {
-        grid-column: 2;
-        grid-row: 1;
-        place-self: center;
-   
-        .langu-ul {
-            grid-template-rows: 50% 50%;
-            display: grid;
-            justify-content: center;
-        .eng-img {
-            width: 2em;
-            justify-self: center;
-            vertical-align: middle;
-                
-            }
-         .swe-img {
-            width: 2em;
-            justify-self: center;
-            vertical-align: middle;
-            
-            }
-        .li-list.eng {
-            list-style-type: none;
-            font-size: 1.5em;
-            align-self: center;
-        }
-        .li-list.swe {
-            list-style-type: none;
-            font-size: 1.5em;
-            align-self: center;
-           
-        }
-    }
-    }
-    .hobby-pos {
-        grid-column: 1;
-        grid-row: 1;
-        justify-self: center;
-    }
-    .merge-hobby {
-        grid-column: 1;
-        grid-row: 1;
-        align-self: center;
-        justify-self: center;
-    }
-    .hobby-h2 {
-        grid-column: 1;
-        grid-row: 1;
-        justify-self: center;
-        font-size: 2rem;
-    }
-    .hobby-ul {
-        grid-column: 1;
-        grid-row: 1;
-        place-self: center;
-    }
-}
 
 .footer {
     grid-column: 2/-1;
-    grid-row: 23/25;
+    grid-row: 26/28;
     background: -webkit-linear-gradient(93deg, $box-bkg7 29%, $box-bkg8 82%);
     text-align: -webkit-center;
     .f-placement {
-        width: 50%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        .fpos-ul {
+            .f-li:hover {
+                background: burlywood;
+            }
+        }
         .f-li {
             list-style-type: none;
+            height: 8vh;
+        }
+        // .f-li.a {
+            
+        // }
+        .f-li.b {
+            margin-left: 15px;
+        }
+        .f-li.c {
+            margin-left: 30px;
         }
         .fot-a {
             margin-right: 40px;
             text-decoration: none;
+            border: 1px solid burlywood;
+            color: black;
+            .fot-a:hover {
+                background: burlywood;
+            }
         }
         .li-img {
             width: 30px;
             display: inline-block;
             vertical-align: middle;
-            margin-right: 1rem;
+            margin-right: 0.2rem;
             background-color: $specialF-color;
             border-radius: 50%;
         }
@@ -214,7 +155,7 @@ body * {
             grid-row: 1;
             display: block;
             cursor: pointer; 
-            color: red;     
+            color: blue;     
     
         }  
         
@@ -235,9 +176,9 @@ body * {
             grid-row: 1;
            .linkb {
             background-color: rgba(57, 74, 100, 0);
-            
-            width: 120px;        
-            height: 60px;
+            width: 80px;
+            height: 40px;
+            margin-top: 1rem;
             border-radius: 100px;
             justify-self: start;
             margin-block-end: auto;
@@ -280,5 +221,22 @@ body * {
 @include phone {
     .top-h1 {
         margin-left: 20%;
+    }
+}
+@include phonexs {
+    .main {
+        .frame-img {
+            width: 80%;
+        }
+    }
+    .section2 {
+        .r-p1 {
+            margin-top: 30%;
+        }
+    }
+}
+@include miniphonexs {
+    .topbar {
+        width: 20.5rem;
     }
 }

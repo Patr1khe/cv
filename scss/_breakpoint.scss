@@ -25,6 +25,16 @@
         @content;        
     }
 }
+@mixin phonexs {
+    @media screen and (max-width:460px) {
+        @content;        
+    }
+}
+@mixin miniphonexs {
+    @media screen and (max-width:340px) {
+        @content;        
+    }
+}
 
 
 
