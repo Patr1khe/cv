@@ -1,0 +1,72 @@
+.footer {
+    grid-column: 2/-1;
+    grid-row: 26/28;
+    // background: linear-gradient(-5deg, $box-bkg7 29%, $box-bkg8 82%);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.736) , rgba(105, 93, 93, 0.714) , rgba(0, 0, 0, 0.593)),url(https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-position: 50%;
+    text-align: -webkit-center;
+    .f-placement {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .h3-contacts {
+            background: linear-gradient(300deg,lime, rgb(86, 236, 236));
+            font-size: 1.5em;
+            background-clip: text;
+            -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
+            fill: transparent;
+            color: transparent;
+            animation: slidein 10s;
+        }
+        .fpos-ul {
+            border: 2px inset $box-bkg6;
+            border-radius: 5px;
+            animation: showup 30s;
+            .f-li:hover {
+                background: linear-gradient(-4deg, $box-bkg7 29%, $box-bkg8 82%);
+                border-style: outset;
+                
+            }
+            .f-li {
+            list-style-type: none;
+            height: 8vh;
+            padding-top: 6.5px;
+            margin-left: -40px;
+            }
+
+            .fot-a {
+                margin-left: 40px;
+                text-decoration: none;
+                float: left;
+                color: black;
+                background: linear-gradient(white, orange);
+                background-clip: text;
+                -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                fill: transparent;
+                color: transparent;
+            
+            }
+            .fot-a.a {
+                margin-right: 40px;
+            }
+            .fot-a.b {
+                margin-right: 40px;
+            }
+            .fot-a.c {
+                margin-right: 40px;
+            }
+            .li-img {
+                width: 30px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 0.2rem;
+                background-color: $specialF-color;
+                border-radius: 50%;
+            }
+        }
+
+    }
+}

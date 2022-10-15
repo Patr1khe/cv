@@ -19,7 +19,12 @@
     }  
        
     .top-h1 {
-        color: $text-color;
+        background: linear-gradient(300deg,#00ff40, #00ffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        fill: transparent;
+        color: transparent;
         text-align: center;
         
         

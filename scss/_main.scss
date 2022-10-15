@@ -84,7 +84,12 @@
         grid-row: 3;
         grid-column: 2;
         height: 100px;
-        color: white;
+        background: linear-gradient(300deg,#00ff00, #00ffff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        fill: transparent;
+        color: transparent;
         box-shadow: inset 0px -15px 60px rgb(227,254,254),
                     inset -25px 13px 14px #22b99d,
                     24px 30px 33px rgb(52,221,216),
