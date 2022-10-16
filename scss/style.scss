@@ -183,11 +183,32 @@ body * {
             width: 80%;
         }
     }
-    .section2 {
-        .r-p1 {
-            margin-top: 30%;
+    .section {
+        grid-template-rows: 58% 42%;
+        .text-s1 {
+            margin-top: 20%;
+        }
+        .ol-s1 {
+            margin-top: 28%;
         }
     }
+    .section2 {
+        grid-row: 14/24;
+        grid-template-rows: 54% 22% 24% 0%;
+        .r-p1 {
+            margin-top: 30%;
+         }
+    }
+
+    .section3 {
+        grid-row: 24/26;
+        .twoboxpos {
+           margin-top: 25%;
+           
+            
+        }
+    }
+    
 }
 @include miniphonexs {
     .topbar {
