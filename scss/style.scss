@@ -1,34 +1,3 @@
-@keyframes fade-inout {
-    0%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-@keyframes fadein {
-    0%{ opacity: 0;}
-    100%{ opacity: 1;}
-}
-@keyframes showup {
-    0% {opacity:0;}
-    20% {opacity:1;}
-    80% {opacity:1;}
-    100% {opacity:0;}
-}
-
-@keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
-}
-
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
-}
-
-
 @import 'config';
 @import 'breakpoint';
 @import 'header';
@@ -37,6 +6,7 @@
 @import 'section2';
 @import 'section3';
 @import 'footer';
+@import 'keyframes';
 
 
 
@@ -44,7 +14,8 @@
 
 body {
     margin: 0 20px;
-    -webkit-text-size-adjust: 100%;
+    // -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     margin-left: 0px;
     margin-right: 0px;
     background-image: url(../image/mountain1.svg);
@@ -201,6 +172,12 @@ body * {
     }
 }
 @include phonexs {
+    .headerside{
+        .linkb {
+            width: 80px;
+            height: 40%;
+        }
+    }
     .main {
         .frame-img {
             width: 80%;

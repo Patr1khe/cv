@@ -8,7 +8,7 @@
     .pos-h2 {
         justify-self: center;
         width: 50%;
-        text-align: -webkit-center;
+        text-align: center;
         .li-list {
             list-style-type: none;
         }
@@ -20,7 +20,7 @@
         // -webkit-text-fill-color: transparent;
         fill: transparent;
         color: transparent;
-        animation: fadein 3s;
+        animation: fade-inout 16s, slideintop 14s;
         }
         .langu-ul {
             justify-content: center;
@@ -56,7 +56,7 @@
     .hobby-pos {
         justify-self: center;
         width: 50%;
-        text-align: -webkit-center;
+        text-align: center;
         .hobby-h2 {
             justify-self: center;
             font-size: 1.5rem;
@@ -66,11 +66,13 @@
             // -webkit-text-fill-color: transparent;
             fill: transparent;
             color: transparent;
+            animation: fade-inout 16s, slidein 14s;
+            
         }
         .hobby-ul {
             place-self: center;
             color: white;
-            
+            animation: fade-inout 14s, slidein 12s;
         }
         .li-list {
             list-style-type: none;

@@ -17,6 +17,7 @@
         // -webkit-text-fill-color: transparent;
         fill: transparent;
         color: transparent;
+        animation: fade-inout 8s, slideinreverse 6s;
     }
     .text-s1 {
         grid-column:1;
@@ -25,7 +26,7 @@
         margin-top: 15%;
         justify-self: center;
         color: white;
-     
+        animation: fade-inout 7s, slideinreverse 6s;
         
     }
     .h3-s1 {
@@ -40,6 +41,7 @@
         fill: transparent;
         color: transparent;
         font-size: 1.3rem;
+        animation: fade-inout 8s, slideinreverse 6s;
     }
     .ol-s1 {
         grid-column: 1;
@@ -50,7 +52,7 @@
         grid-template-columns: repeat(2, 50%);
         padding: 6%;
         color: white;
-        
+        animation: fade-inout 7s, slideinreverse 6s;
     }
     
     

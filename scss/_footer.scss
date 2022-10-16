@@ -18,7 +18,7 @@
             // -webkit-text-fill-color: transparent;
             fill: transparent;
             color: transparent;
-            animation: slidein 10s;
+            animation: fade-inout 20s, slidein 18s;
         }
         .fpos-ul {
             border: 2px inset $box-bkg6;

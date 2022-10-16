@@ -2,6 +2,7 @@
     grid-column: 2/-1;
     // background: #37415bc4;
     border-bottom: 2px solid black;
+    
 
     .linkb {
         background-color: rgb(57, 74, 100);
@@ -26,6 +27,7 @@
         fill: transparent;
         color: transparent;
         text-align: center;
+        animation: fade-inout 5s, slidein 3s;
         
         
     }
